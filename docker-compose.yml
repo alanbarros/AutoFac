@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  geometricshapes.webapi:
+    image: ${DOCKER_REGISTRY-}geometricshapeswebapi
+    build:
+      context: .
+      dockerfile: GeometricShapes.WebApi/Dockerfile
